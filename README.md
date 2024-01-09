@@ -2,7 +2,29 @@
 # Lisp-Parser Project
 
 ## Introduction
-Lisp-Parser is a TypeScript-based parser for LISP code. It provides a means to parse LISP syntax into a structured format, offering insights into the code's structure and components. This tool is particularly useful for developers working with or analyzing LISP code. We could extend this logic to have LISP interpreter in future!
+Lisp-Parser is a TypeScript-based parser for LISP code. It provides a means to parse LISP syntax into a structured format, offering insights into the code's structure and components. This tool is particularly useful for developers working with or analyzing LISP code. We could extend this logic to have LISP interpreter in future! I will briefly mention algorithm & data structure after getting started. 
+
+## Getting Started
+
+### Prerequisites
+- Node.js
+- npm (Node Package Manager)
+
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone git@github.com:berkdurmus/lisp-parser.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd lisp-parser
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+
 
 ## Algorithm and Data Structure
 
@@ -32,25 +54,6 @@ The `main.ts` file in the project indicates a similar flow: removing comments, t
 - Time Complexity: Generally linear (O(n)) for both tokenization and parsing.
 
 
-## Getting Started
-
-### Prerequisites
-- Node.js
-- npm (Node Package Manager)
-
-### Installation
-1. **Clone the repository:**
-   ```bash
-   git clone git@github.com:berkdurmus/lisp-parser.git
-   ```
-2. **Navigate to the project directory:**
-   ```bash
-   cd lisp-parser
-   ```
-3. **Install dependencies:**
-   ```bash
-   npm install
-   ```
 
 ## Usage
 To use Lisp-Parser, run the following command from the terminal with your LISP code as an argument:
