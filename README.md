@@ -40,17 +40,18 @@ npm test
 ## Test Results
 I've created 10 test cases. 10/10 passed successfully. Tests are provided below:
 
-      Test Name                           Input                         Expected Output
-   1. Basic Parsing                       input: '(a b c)'              [['a', 'b', 'c']]
-   2. Nested Parsing                      input: '(a (b c) d)'          [['a', ['b', 'c'], 'd']]
-   3. Quote Handling                      input: "'(a b c)"             [['quote', ['a', 'b', 'c']]]
-   4. Syntax Error Handling               input: '(a (b c)'             Syntax Error: "Unmatched ( in expression"
-   5. Empty Input                         input: ''                     []
-   6. Deeply Nested Parsing               input: '(a (b (c d) e) f)'    [['a', ['b', ['c', 'd'], 'e'], 'f']]
-   7. Multiple Nested Quotes              input: "'(a '(b c) d)"        [['quote', ['a', ['quote', ['b', 'c']], 'd']]]
-   8. Mixed Quotes and Nested Structures  input: '(a \'(b c) (d e))'    [['a', ['quote', ['b', 'c']], ['d', 'e']]]
-   9. Consecutive Quotes                  input: "''a"                  [['quote', ['quote', 'a']]]
-  10. Unmatched Closing Parenthesis       input: '(a b ))'              Syntax Error: "Unmatched ) in expression"
+   | Test Name                           | Input                        | Expected Output
+   |:----------------------------------- |:---------------------------- |:-----------------------------------                                             
+   | Basic Parsing                       | input: '(a b c)'             | [['a', 'b', 'c']]
+   | Nested Parsing                      | input: '(a (b c) d)'         | [['a', ['b', 'c'], 'd']]
+   | Quote Handling                      | input: "'(a b c)"            | [['quote', ['a', 'b', 'c']]]
+   | Syntax Error Handling               | input: '(a (b c)'            | Syntax Error: "Unmatched ( in expression"
+   | Empty Input                         | input: ''                    | []
+   | Deeply Nested Parsing               | input: '(a (b (c d) e) f)'   | [['a', ['b', ['c', 'd'], 'e'], 'f']]
+   | Multiple Nested Quotes              | input: "'(a '(b c) d)"       | [['quote', ['a', ['quote', ['b', 'c']], 'd']]]
+   | Mixed Quotes and Nested Structures  | input: '(a \'(b c) (d e))'   | [['a', ['quote', ['b', 'c']], ['d', 'e']]]
+   | Consecutive Quotes                  | input: "''a"                 | [['quote', ['quote', 'a']]]
+   | Unmatched Closing Parenthesis       | input: '(a b ))'             | Syntax Error: "Unmatched ) in expression"
    
 Screenshot below shows the results.
 <img width="1494" alt="Screenshot 2024-01-09 at 05 09 17" src="https://github.com/berkdurmus/lisp-parser/assets/32547890/18bb6be3-27df-4991-aca1-9bec34974db6">
