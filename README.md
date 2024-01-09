@@ -2,19 +2,19 @@
 # Lisp-Parser Project
 
 ## Introduction
-Lisp-Parser is a TypeScript-based parser for LISP code. It provides a means to parse LISP syntax into a structured format, offering insights into the code's structure and components. This tool is particularly useful for developers working with or analyzing LISP code.
+Lisp-Parser is a TypeScript-based parser for LISP code. It provides a means to parse LISP syntax into a structured format, offering insights into the code's structure and components. This tool is particularly useful for developers working with or analyzing LISP code. We could extend this logic to have LISP interpreter in future!
 
 ## Algorithm and Data Structure
 
 ### Lisp Parsing Algorithm
-1. **Tokenization (Lexical Analysis):**
+1. **Tokenization:**
    - Breaks the input Lisp code into tokens (smallest units like keywords, symbols, operators).
    - Data Structure: Array or list for storing tokens.
    - Complexity: Time - O(n), Space - O(n).
 
-2. **Syntax Analysis (Parsing):**
+2. **Parsing:**
    - Converts the stream of tokens into a syntax tree (AST - Abstract Syntax Tree).
-   - Data Structure: Tree (AST).
+   - Data Structure: Implemented via Stacks.
    - Complexity: Time - Generally O(n), Space - O(n).
 
 3. **Removing Comments:**
