@@ -24,37 +24,6 @@ Lisp-Parser is a TypeScript-based parser for LISP code. It provides a means to p
    npm install
    ```
 
-
-
-## Algorithm and Data Structure
-
-### Lisp Parsing Algorithm
-
-1. **Removing Comments:**
-   - Scans the code to strip out comments.
-   - Complexity: Time - O(n), Space - O(n) if storing the result, otherwise O(1).
-
-2. **Tokenization:**
-   - Breaks the input Lisp code into tokens (smallest units like keywords, symbols, operators).
-   - Data Structure: Array or list for storing tokens.
-   - Complexity: Time - O(n), Space - O(n).
-
-3. **Parsing:**
-   - Converts the stream of tokens into a syntax tree (AST - Abstract Syntax Tree).
-   - Data Structure: Implemented via Stacks.
-   - Complexity: Time - Generally O(n), Space - O(n).
-
-
-
-### Application to Lisp-Parser
-The `main.ts` file in the project indicates a similar flow: removing comments, tokenization, and parsing into an AST.
-
-### Memory and Time Complexity
-- Memory Complexity: Primarily from storing tokens and the AST, both proportional to the input size (O(n)).
-- Time Complexity: Generally linear (O(n)) for both tokenization and parsing.
-
-
-
 ## Usage
 To use Lisp-Parser, run the following command from the terminal with your LISP code as an argument:
 ```bash
@@ -92,6 +61,32 @@ Screenshot below shows the test results.
 Screenshot below shows the npm run parse command output.
 <img width="779" alt="Screenshot 2024-01-09 at 05 38 29" src="https://github.com/berkdurmus/lisp-parser/assets/32547890/4e8b56ef-6f2c-4826-b289-dab83a9d64ca">
 
+## Algorithm and Data Structure
+
+### Lisp Parsing Algorithm
+
+1. **Removing Comments:**
+   - Scans the code to strip out comments.
+   - Complexity: Time - O(n), Space - O(n) if storing the result, otherwise O(1).
+
+2. **Tokenization:**
+   - Breaks the input Lisp code into tokens (smallest units like keywords, symbols, operators).
+   - Data Structure: Array or list for storing tokens.
+   - Complexity: Time - O(n), Space - O(n).
+
+3. **Parsing:**
+   - Converts the stream of tokens into a syntax tree (AST - Abstract Syntax Tree).
+   - Data Structure: Implemented via Stacks.
+   - Complexity: Time - Generally O(n), Space - O(n).
+
+
+
+### Application to Lisp-Parser
+The `main.ts` file in the project indicates a similar flow: removing comments, tokenization, and parsing into an AST.
+
+### Memory and Time Complexity
+- Memory Complexity: Primarily from storing tokens and the AST, both proportional to the input size (O(n)).
+- Time Complexity: Generally linear (O(n)) for both tokenization and parsing.
 
 
 
