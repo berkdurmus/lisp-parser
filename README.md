@@ -4,6 +4,31 @@
 ## Introduction
 Lisp-Parser is a TypeScript-based parser for LISP code. It provides a means to parse LISP syntax into a structured format, offering insights into the code's structure and components. This tool is particularly useful for developers working with or analyzing LISP code.
 
+## Algorithm and Data Structure
+
+### Lisp Parsing Algorithm
+1. **Tokenization (Lexical Analysis):**
+   - Breaks the input Lisp code into tokens (smallest units like keywords, symbols, operators).
+   - Data Structure: Array or list for storing tokens.
+   - Complexity: Time - O(n), Space - O(n).
+
+2. **Syntax Analysis (Parsing):**
+   - Converts the stream of tokens into a syntax tree (AST - Abstract Syntax Tree).
+   - Data Structure: Tree (AST).
+   - Complexity: Time - Generally O(n), Space - O(n).
+
+3. **Removing Comments:**
+   - Scans the code to strip out comments.
+   - Complexity: Time - O(n), Space - O(n) if storing the result, otherwise O(1).
+
+### Application to Lisp-Parser
+The `main.ts` file in the project indicates a similar flow: removing comments, tokenization, and parsing into an AST.
+
+### Memory and Time Complexity
+- Memory Complexity: Primarily from storing tokens and the AST, both proportional to the input size (O(n)).
+- Time Complexity: Generally linear (O(n)) for both tokenization and parsing.
+
+
 ## Getting Started
 
 ### Prerequisites
@@ -53,8 +78,16 @@ I've created 10 test cases. 10/10 passed successfully. Tests are provided below:
    | Consecutive Quotes                  | input: "''a"                 | [['quote', ['quote', 'a']]]
    | Unmatched Closing Parenthesis       | input: '(a b ))'             | Syntax Error: "Unmatched ) in expression"
    
-Screenshot below shows the results.
+
+Screenshot below shows the test results.
 <img width="1494" alt="Screenshot 2024-01-09 at 05 09 17" src="https://github.com/berkdurmus/lisp-parser/assets/32547890/18bb6be3-27df-4991-aca1-9bec34974db6">
+
+
+Screenshot below shows the npm run parse command output.
+<img width="779" alt="Screenshot 2024-01-09 at 05 38 29" src="https://github.com/berkdurmus/lisp-parser/assets/32547890/4e8b56ef-6f2c-4826-b289-dab83a9d64ca">
+
+
+
 
 ## Development
 - **`main.ts`**: The entry point of the application. It includes the logic for parsing LISP code.
