@@ -41,7 +41,7 @@ The `main.ts` file in the project indicates a similar flow: removing comments, t
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone [git@github.com:berkdurmus/lisp-parser.git]
+   git clone git@github.com:berkdurmus/lisp-parser.git
    ```
 2. **Navigate to the project directory:**
    ```bash
