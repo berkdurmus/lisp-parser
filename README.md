@@ -1,5 +1,9 @@
 
-# Lisp-Parser Project
+# Lisp-Parser
+
+![lisp-parser](https://github.com/berkdurmus/lisp-parser/assets/32547890/5668e207-1193-4309-98fb-5fa37bf1d3ad)
+
+
 
 ## Introduction
 Lisp-Parser is a TypeScript-based parser for LISP code. It provides a means to parse LISP syntax into a structured format, offering insights into the code's structure and components. This tool is particularly useful for developers working with or analyzing LISP code. We could extend this logic to have LISP interpreter in future! I will briefly mention algorithm & data structure after getting started. 
