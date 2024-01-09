@@ -13,7 +13,7 @@ Lisp-Parser is a TypeScript-based parser for LISP code. It provides a means to p
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone [repository URL]
+   git clone [git@github.com:berkdurmus/lisp-parser.git]
    ```
 2. **Navigate to the project directory:**
    ```bash
